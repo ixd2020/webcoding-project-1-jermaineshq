@@ -1,8 +1,11 @@
 /* CSS files add styling rules to your content */
 
 body {
-  font-family: helvetica, arial, sans-serif;
+  font-family: Indie Flower;
   margin: 2em;
+  background-image: url("https://cdn.glitch.com/f059ccde-c18f-49ac-b555-849d51a303c4%2FRainbow-Gradient-Pink-and-Purple-Zoom-Virtual-Background.webp?v=1605150643298");
+  background-repeat: repeat;
+  background-size: 100%;
 }
 
 h1 {
@@ -17,4 +20,80 @@ table, th, td {
 th, td {
   padding: 10px;
   text-align: left;    
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  padding: 50px;
+  height: 300px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+*{
+  box-sizing: border-box;
+}
+.whitebox {
+  background-color: white;
+}
+.yellowbox {
+  background-color: yellow;
+}
+.purplebox{
+  background-color: purple;
+}
+.bluebox{
+  background-color: blue;
+}
+.pinkbox{
+  background-color: pink;
+}
+.greybox{
+  background-color: grey;
+}
+.threecol{
+  width: 33.33%;
+}
+.twocol {
+  width: 50%;
+}
+.onecol {
+  width: 100%;
+}
+
+a{
+  border:1px solid lightblue;
+  paddding:10px;
+  text-decoration:none;
+}
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: darkblue;
+}
+
+a:hover{
+  color: purple
+}
+
+a:active {
+  color: purple;
+}
+
+.attribution{
+  width:300px;
+  height:200px;
+  background:white;
+  border:px solid black;
+  inline:block;
 }
