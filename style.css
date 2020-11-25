@@ -1,27 +1,68 @@
 /* CSS files add styling rules to your content */
 
 body {
-  font-family: Indie Flower;
+  font-family: Xang Mono;
   margin: 2em;
-  background-image: url("https://cdn.glitch.com/f059ccde-c18f-49ac-b555-849d51a303c4%2FRainbow-Gradient-Pink-and-Purple-Zoom-Virtual-Background.webp?v=1605150643298");
-  background-repeat: repeat;
-  background-size: 100%;
+  background-color: #212124;
 }
 
+
+/* headers and para texts */
 h1 {
   font-style: italic;
-  color: #373fff;
+  color: white;
+  font-size: 50px ;
 }
 
-table, th, td {
-  border: 2px solid indigo;
+h2 {
+  color: white;
+  font-size: 30px ;
+}
+
+h3 {
+  color: white;
+  font-size: 20px;
+}
+
+h4 {
+  color: white;
+  font-size: 15px;
+}
+
+h5 {
+  color: white;
+  font-size: 10px;
+}
+
+h6 {
+  color: white
+  display:inline;
+  display:table-cell;
+}
+
+p {
+  color: white;
+}
+
+
+/* table */
+table,
+th,
+td {
+  border: 2px solid white;
   border-collapse: collapse;
+  color: white;
+  background: grey
 }
-th, td {
+th,
+td {
   padding: 10px;
-  text-align: left;    
+  text-align: left;
+  color: white;
 }
 
+
+/* box style, sizing, color and col */
 * {
   box-sizing: border-box;
 }
@@ -37,7 +78,7 @@ th, td {
   clear: both;
   display: table;
 }
-*{
+* {
   box-sizing: border-box;
 }
 .whitebox {
@@ -46,19 +87,19 @@ th, td {
 .yellowbox {
   background-color: yellow;
 }
-.purplebox{
+.purplebox {
   background-color: purple;
 }
-.bluebox{
+.bluebox {
   background-color: blue;
 }
-.pinkbox{
+.pinkbox {
   background-color: pink;
 }
-.greybox{
-  background-color: grey;
+.greybox {
+  background-color: darkblue;
 }
-.threecol{
+.threecol {
   width: 33.33%;
 }
 .twocol {
@@ -68,32 +109,66 @@ th, td {
   width: 100%;
 }
 
-a{
-  border:1px solid lightblue;
-  paddding:10px;
-  text-decoration:none;
-}
 
+/* link */
 a:link {
-  color: blue;
+  color: white;
 }
 
 a:visited {
-  color: darkblue;
+  color: lightgrey;
 }
 
-a:hover{
-  color: purple
+a:hover {
+  color: lightblue;
 }
 
 a:active {
-  color: purple;
+  color: black;
 }
 
-.attribution{
-  width:300px;
-  height:200px;
-  background:white;
-  border:px solid black;
-  inline:block;
+.attribution {
+  width: 300px;
+  height: 200px;
+  background: white;
+  border: px solid black;
+  inline: block;
+}
+
+@media screen and (max-width: 800px) {
+  .threecol,
+  .twocol,
+  .onecol {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+
+/* Top navigation*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #404040;
+}
+li {
+  display: inline;
+}
+
+li {
+  float: left;
+}
+
+a {
+  display: block;
+  padding: 12px;
+}
+
+.box {l
+  ist-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: blue;  
 }
