@@ -41,7 +41,9 @@ h6 {
 }
 
 p {
+  font-family: Roboto;
   color: white;
+  font-size: 16px;
 }
 
 
@@ -49,10 +51,10 @@ p {
 table,
 th,
 td {
-  border: 2px solid white;
+  border: 2px solid grey;
   border-collapse: collapse;
   color: white;
-  background: grey
+  background: #212124;
 }
 th,
 td {
@@ -68,7 +70,6 @@ td {
 }
 
 .box {
-  float: left;
   padding: 50px;
   height: 300px;
 }
@@ -83,18 +84,6 @@ td {
 }
 .whitebox {
   background-color: white;
-}
-.yellowbox {
-  background-color: yellow;
-}
-.purplebox {
-  background-color: purple;
-}
-.bluebox {
-  background-color: blue;
-}
-.pinkbox {
-  background-color: pink;
 }
 .greybox {
   background-color: darkblue;
@@ -131,7 +120,7 @@ a:active {
   width: 300px;
   height: 200px;
   background: white;
-  border: px solid black;
+  border: solid black;
   inline: block;
 }
 
@@ -148,10 +137,27 @@ a:active {
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
   overflow: hidden;
-  background-color: #404040;
+  font-size: 12px;
 }
+
+.nav {
+  background-color: #404040;
+  padding: 0;
+  font-size: 18px;
+}
+
+.subnav {
+  padding: 0;
+  font-size: 12px
+}
+
+.footer {
+  background-color: #404040;
+  padding: 0;
+  font-size: 12px;
+}
+
 li {
   display: inline;
 }
@@ -165,10 +171,50 @@ a {
   padding: 12px;
 }
 
-.box {l
-  ist-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: blue;  
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.threecolumn {
+  float: left;
+  width: 33.333%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+li a {
+  text-decoration:none;
+  color:white;
+  padding-right:3em;
+  position:relative;
+  transition: all ease-in-out 500ms;
+}
+
+li a::after {
+  content:"";
+  position:absolute;
+  display:block;
+  height:0.25em;
+  width:0%;
+  background-color:lightblue;
+  bottom:-0.005em;
+  transition: all ease-in-out 300ms;
+}
+
+li a:hover::after {
+  width:50%;
 }
