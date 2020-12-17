@@ -5,20 +5,10 @@
 console.log("hi");
 
 
-
-document.getElementById("demo").innerHTML = "Hello World!";
-
-function mOver(obj) {
-  obj.innerHTML = "You've moused over :D"
-}
-
-function mOut(obj) {
-  obj.innerHTML = "Mouse Over Me"
-}
-
-document.getElementById("myBtn").addEventListener("click", myFunction);
-
-function myFunction() {
-  alert ("Hello World!");
-}
-
+$(document).ready(function(){
+  $("button").click(function(){
+    $(function(){
+      alert("Your form has been successfully submitted!");
+    });
+  });
+});

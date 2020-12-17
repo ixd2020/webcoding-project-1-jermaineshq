@@ -5,82 +5,348 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Artworks!</title>
+    <title>Kavan TheKid</title>
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    
-    <h1 style="text-align:center;">
-      -name-
+    <h1 style="text-align:center; transition: ease-in-out 1200ms;">
+      Kavan TheKid
     </h1>
 
     <hr />
 
     <ul class="nav">
-      <li style="padding-left:1em;" class="linav"><a href="index.html">Home</a></li>
-      <li class="linav"><a href="artist.html">About</a></li>
-      <li class="linav"><a href="artwork.html">Artworks</a></li>
-      <li class="linav"><a href="enquiry.html">Contact</a></li>
+      <li style="padding-left:1em;">
+        <a href="index.html">Home</a>
+      </li>
+      <li><a href="artist.html">About</a></li>
+      <li><a href="artwork.html">Artworks</a></li>
+      <li><a href="enquiry.html">Contact</a></li>
     </ul>
 
     <hr />
-    
-    <p class="subnav">
-        <a href="#artwork"><b>Click to view all artworks!</b></a>
+
+    <p class="subnav" style="display:inline;">
+      <a href="#popular"><b>Click to view popular works!</b></a>
+      <a href="#artwork"><b>Click to view all artworks!</b></a>
     </p>
     <hr />
+    <br />
 
-    <h2>
-      Popular works!!
-    </h2>
-
-    <p>
-      Top3 works from the artist!!
-    </p>
-    
+    <p id="book"></p>
     <div class="row">
-      <div style="background-color:#212124;" class="threecolumn">
-        <img
-          src="https://cdn.glitch.com/f059ccde-c18f-49ac-b555-849d51a303c4%2FIwontletyoufall(FINAL).jpg?v=1606965181873"
-          width="100%"
-        />
+      <div class="twocolumn">
+        <iframe
+          style="padding-left:2px;"
+          class="video"
+          width="740"
+          height="520"
+          src="https://www.youtube.com/embed/6xvh2AFSmrY"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
-      <div style="background-color:#212124;" class="threecolumn">
-        <img
-          src="https://cdn.glitch.com/f059ccde-c18f-49ac-b555-849d51a303c4%2FIwontletyoufall(FINAL).jpg?v=1606965181873"
-          width="100%"
-        />
+
+      <div class="twocolumn">
+        <h2 style="text-align: center;">
+          Stay inside and don't let the dreams out
+        </h2>
+        <p>
+          <b style="text-align: center;"
+            >Kavan TheKid's first ever published photography book!</b
+          >
+          <br />
+        </p>
+        <p>
+          <b>Synopsis:</b> Stay Inside and Don't Let the Dreams Out is a surreal
+          perspective on the struggle of dealing with depression, internal
+          disarray, and modern societal culture. Each piece is different in its
+          subject matter but the same in its theme; a bleak outlook on the mind
+          and the future of personal communication and connection.
+          <br />
+          This book will consist of
+          <i
+            >“both metaphorical and literal images that depict my past
+            experiences, emotions and perspectives. It’s a large self-reflection
+            piece that also looks outward at those closest around me.”</i
+          >
+        </p>
+        <p>
+          All the profits from every book sold will be donated to the
+          <b>Child Mind Institute.</b> The Child Mind Institute is a national
+          non-profit, dedicated to transforming the lives of Children and their
+          families who struggle with Mental Health and Learning Disorders.
+        </p>
+        <p>
+          <b>About:</b> The book includes every piece from Kavan the Kid’s
+          (Kavan Cardoza) photographic series “Stay Inside & Don’t Let the
+          Dreams Out.” It is told in story form with fifty images spanning over
+          seven chapters.
+        </p>
+        <p><b>Size: </b>Standard Portrait, 8×10 in, 20×25 cm</p>
+        <button type="button" class="button">
+          <a
+            href="http://www.kavanthekid.com/shop/stay-inside-amp-dont-let-the-dreams-out-hardcover-photography-book"
+            >BUY NOW!</a
+          >
+        </button>
       </div>
-      <div style="background-color:#212124;" class="threecolumn">
-        <img
-          src="https://cdn.glitch.com/f059ccde-c18f-49ac-b555-849d51a303c4%2FIwontletyoufall(FINAL).jpg?v=1606965181873"
-          width="100%"
-        />
+    </div>
+    <br />
+    <hr />
+
+    <p id="popular"></p>
+
+    <div class="row">
+      <div class="threecolumn">
+        <p style="font-size:25px; text-align:center; padding-top:200px;">
+          Top2 Works of Kavan TheKid
+        </p>
+      </div>
+      <div class="flip-box threecolumn">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img
+              src="https://cdn.glitch.com/f059ccde-c18f-49ac-b555-849d51a303c4%2FIwontletyoufall(FINAL).jpg?v=1606965181873"
+              width="100%"
+            />
+          </div>
+          <div class="flip-box-back">
+            <p style="padding-top:130px;"><b>I Won't Let You Fall</b></p>
+            <p style="padding-left:30px; padding-right:25px; text-align:left;">
+              This photo is dedicated to Kavan TheKid's mother.
+              <br />
+              "It was created with her in mind. It’s a reflection of all the
+              times we feel on the edge, that we were about to fall to our
+              demise and yet, there is someone to lift you up. To save you. The
+              reason I chose to use a crow above any other bird is the crow is
+              always related to death. The crow is wonderful creature and I
+              wanted to display it as the hero. Have it related to life as
+              opposed to death."
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-box threecolumn">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img
+              src="https://cdn.glitch.com/f059ccde-c18f-49ac-b555-849d51a303c4%2FWhat%20We%20Take.PNG?v=1607567539259"
+              width="100%"
+            />
+          </div>
+          <div class="flip-box-back">
+            <p style="padding-top:120px;"><b>What We Take</b></p>
+            <p style="padding-left:30px; padding-right:25px; text-align:left;">
+              Another photo that holds a special place to Kavan TheKid.
+              <br />
+              "It’s essentially the opposite of 'I Won’t Let You Fall.'' The
+              photo is a metaphorical representation of how we live off others
+              or how we take from them for our own benefit. That’s why I chose
+              doves for this image above any other bird. Doves are pure and I
+              feel represent hope, beauty and innocence. To have them flying
+              around this monster-esk character, if the photo were to come alive
+              like a film, the monster would suck the life from each of them."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <h2 id="artwork">All artworks!</h2>
+
+    <div class="imageoverlay">
+      <img
+        src="https://cdn.glitch.com/f059ccde-c18f-49ac-b555-849d51a303c4%2FInto%20The%20Night.PNG?v=1608116969491"
+        class="image"
+        style="width:298%; padding-left:8px;"
+      />
+      <div class="middle">
+        <div class="ovrlaytext">
+          <p>
+            Into The Night
+          </p>
+        </div>
       </div>
     </div>
 
-    <hr/>
-    
-    <h2 id="artwork">All artworks!</h2>
-    
+    <div class="row">
+      <div class="imageoverlay threecolumn">
+        <img
+          src="https://cdn.glitch.com/f059ccde-c18f-49ac-b555-849d51a303c4%2FInfluencer.PNG?v=1606965260429"
+          width="100%"
+          class="image"
+          style="width:100%"
+        />
+        <div class="middle">
+          <div class="ovrlaytext">
+            <p>
+              Influencer
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="imageoverlay threecolumn">
+        <img
+          src="https://cdn.glitch.com/f059ccde-c18f-49ac-b555-849d51a303c4%2FStay%20Inside%20%26%20Don't%20Let%20the%20Dreams%20Out.PNG?v=1606965247860"
+          width="100%"
+          class="image"
+          style="width:100%"
+        />
+        <div class="middle">
+          <div class="ovrlaytext">
+            <p>
+              Stay Inside & <br />
+              Don't Let The dreams out
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="imageoverlay threecolumn">
+        <img
+          src="https://cdn.glitch.com/f059ccde-c18f-49ac-b555-849d51a303c4%2FWelcome%20to%20the%20Party.PNG?v=1606965251399"
+          width="100%"
+          class="image"
+          style="width:100%"
+        />
+        <div class="middle">
+          <div class="ovrlaytext">
+            <p>Welcome To The Party</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="imageoverlay threecolumn">
+        <img
+          src="https://cdn.glitch.com/f059ccde-c18f-49ac-b555-849d51a303c4%2FForgetting%20Yourself.PNG?v=1606965227708"
+          width="100%"
+          class="image"
+          style="width:100%"
+        />
+        <div class="middle">
+          <div class="ovrlaytext">
+            <p>
+              Forgetting Yourself
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="imageoverlay threecolumn">
+        <img
+          src="https://cdn.glitch.com/f059ccde-c18f-49ac-b555-849d51a303c4%2FDon't%20let%20go.PNG?v=1606965280409"
+          width="100%"
+          class="image"
+          style="width:100%"
+        />
+        <div class="middle">
+          <div class="ovrlaytext">
+            <p>
+              Don't Let go
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="imageoverlay threecolumn">
+        <img
+          src="https://cdn.glitch.com/f059ccde-c18f-49ac-b555-849d51a303c4%2FThese%20lies%20we've%20built%20are%20only%20paper%20thin.PNG?v=1606965248956"
+          width="100%"
+          class="image"
+          style="width:100%"
+        />
+        <div class="middle">
+          <div class="ovrlaytext">
+            <p>
+              These Lies We've built <br />
+              Are Only Paper Thin
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="imageoverlay threecolumn">
+        <img
+          src="https://cdn.glitch.com/f059ccde-c18f-49ac-b555-849d51a303c4%2FA%20Free%20Mind.PNG?v=1606965237705"
+          width="100%"
+          class="image"
+          style="width:100%"
+        />
+        <div class="middle">
+          <div class="ovrlaytext">
+            <p>
+              A Free Mind
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="imageoverlay threecolumn">
+        <img
+          src="https://cdn.glitch.com/f059ccde-c18f-49ac-b555-849d51a303c4%2FLet%20Me%20Save%20You%20the%20Trouble.PNG?v=1606965255580"
+          width="100%"
+          class="image"
+          style="width:100%"
+        />
+        <div class="middle">
+          <div class="ovrlaytext">
+            <p>
+              Let Me Save You <br />
+              The Trouble
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="imageoverlay threecolumn">
+        <img
+          src="https://cdn.glitch.com/f059ccde-c18f-49ac-b555-849d51a303c4%2FAs%20much%20as%20we%20try%20to%20be%20different.%20We%20still%20end%20up%20all%20the%20same..PNG?v=1606965238261"
+          width="100%"
+          class="image"
+          style="width:100%"
+        />
+        <div class="middle">
+          <div class="ovrlaytext">
+            <p>
+              As Much As We Try To Be Different. <br />
+              We Still End Up The Same
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <hr />
+
     <ul class="footer">
       <li>
         <a href="#top"><b>Go back to the top!</b></a>
       </li>
     </ul>
 
-    <hr/>
-    
+    <hr />
+
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>

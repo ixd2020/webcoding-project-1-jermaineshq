@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Homepage!</title>
+    <title>Kavan TheKid</title>
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
@@ -26,17 +26,19 @@
     />
   </head>
   <body>
-    <h1 style="text-align:center;">
-      Welcome to -name-
+    <h1 style="text-align:center; transition: ease-in-out 1200ms;">
+      Kavan TheKid
     </h1>
 
     <hr />
 
     <ul class="nav">
-      <li style="padding-left:1em;" class="linav"><a href="index.html">Home</a></li>
-      <li class="linav"><a href="artist.html">About</a></li>
-      <li class="linav"><a href="artwork.html">Artworks</a></li>
-      <li class="linav"><a href="enquiry.html">Contact</a></li>
+      <li style="padding-left:1em;">
+        <a href="index.html">Home</a>
+      </li>
+      <li><a href="artist.html">About</a></li>
+      <li><a href="artwork.html">Artworks</a></li>
+      <li><a href="enquiry.html">Contact</a></li>
     </ul>
 
     <hr />
@@ -49,27 +51,83 @@
     <h5 style="text-align:right;">
       "And They Came", Kavan TheKid
     </h5>
-
     <hr />
 
-    <p>
-      This website is dedicated to ...
+    <div class="row">
+      <div class="twocolumn">
+        <img
+          src="https://cdn.glitch.com/f059ccde-c18f-49ac-b555-849d51a303c4%2FInto%20The%20Night.PNG?v=1608116969491"
+          width="115%"
+        />
+        <h5>
+          "Into The Night", Kavan TheKid
+        </h5>
+      </div>
+      <div class="twocolumn" style="padding-top:190px; padding-left:120px;">
+        <p style="text-align:left;">
+          Kavan Cardoza aka KavanTheKid, is an American Conceptual photographer
+          known for his dark and creepy works.
+        </p>
+        <button class="button">
+          <a href="artist.html">About</a>
+        </button>
+      </div>
+    </div>
+    <hr />
+    <div>
+      <h2 style="text-align:center;">
+        Artworks!
+      </h2>
+      <div class="slideshow-container">
+        <div style="padding-right:450px;">
+          <div class="mySlides fade">
+            <img
+              src="https://cdn.glitch.com/f059ccde-c18f-49ac-b555-849d51a303c4%2FYou'll%20Float%20Too.PNG?v=1608116846154"
+              style="width:180%"
+            />
+            <div class="text">You'll Float Too</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              src="https://cdn.glitch.com/f059ccde-c18f-49ac-b555-849d51a303c4%2FThe%20Great%20escape.PNG?v=1608183377526"
+              style="width:180%"
+            />
+            <div class="text">The Great Escape</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              src="https://cdn.glitch.com/f059ccde-c18f-49ac-b555-849d51a303c4%2FGoodbye%20Blue%20Sky.PNG?v=1606965259916"
+              style="width:180%"
+            />
+            <div class="text">Goodbye Blue Sky</div>
+          </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
       <br />
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tellus nibh,
-      sagittis sed laoreet nec, gravida non est. Integer lacinia mollis arcu, ut
-      varius tortor feugiat a. Proin posuere enim volutpat, laoreet risus eu,
-      porta purus. Maecenas tincidunt, mi vitae vulputate mattis, leo sapien
-      vulputate odio, non viverra arcu felis sit amet risus. Duis nec enim non
-      justo tincidunt blandit. Nullam varius turpis vel sapien tempus, a
-      tincidunt est facilisis. Maecenas lacus justo, congue id ligula sed,
-      rhoncus commodo ipsum. Nam quis mattis turpis, quis cursus dui. Integer a
-      felis placerat, mattis lacus in, gravida diam. Maecenas lobortis interdum
-      vestibulum. Donec fringilla quam tellus, eu semper dolor fermentum a. Sed
-      volutpat feugiat diam sit amet dictum. Sed vel erat sit amet erat
-      condimentum accumsan. Aenean interdum nunc nisl, dictum placerat metus
-      vehicula et. Aliquam erat volutpat. Aliquam tempor nisl risus, eu dapibus
-      neque luctus ut.
-    </p>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      <br />
+      <div style="padding-left:695px;">
+        <button class="button">
+          <a href="artwork.html">More</a>
+        </button>
+        <br />
+      </div>
+    </div>
+
+    <hr />
+    <h4>
+      This website is dedicated to Kavan TheKid.
+    </h4>
 
     <hr />
 
@@ -85,5 +143,38 @@
           to make it easier for folks to view source and remix -->
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
     <script src="https://button.glitch.me/button.js" defer></script>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
   </body>
 </html>

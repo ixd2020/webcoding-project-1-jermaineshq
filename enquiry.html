@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Enquiry!</title>
+    <title>Kavan TheKid</title>
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
@@ -25,125 +25,117 @@
     />
   </head>
   <body>
-    <h1 style="text-align:center;">
-      -name-
+    <h1 style="text-align:center; transition: ease-in-out 1200ms;">
+      Kavan TheKid
     </h1>
 
     <br />
     <hr />
 
     <ul class="nav">
-      <li style="padding-left:1em;" class="linav"><a href="index.html">Home</a></li>
-      <li class="linav"><a href="artist.html">About</a></li>
-      <li class="linav"><a href="artwork.html">Artworks</a></li>
-      <li class="linav"><a href="enquiry.html">Contact</a></li>
+      <li style="padding-left:1em;">
+        <a href="index.html">Home</a>
+      </li>
+      <li><a href="artist.html">About</a></li>
+      <li><a href="artwork.html">Artworks</a></li>
+      <li><a href="enquiry.html">Contact</a></li>
     </ul>
 
     <hr />
 
-    <h2 id="form">Form!</h2>
-    <p style="font-size: 12px;">
-      Please fill in the blanks.
-    </p>
-
-    <form action="/action_page.php" id="form1">
-      <label for="fname" style="color:white;">First name :</label>
-      <input
-        type="fname"
-        id="fname"
-        name="fname"
-        style="position:absolute; LEFT:115px;"
-        required
-      /><br /><br />
-
-      <label for="lname" style="color:white;">Last name :</label>
-      <input
-        type="lname"
-        id="lname"
-        name="lname"
-        style="position:absolute; LEFT:115px;"
-        required
-      /><br /><br />
-
-      <label for="email" style="color:white;">Email :</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        style="position:absolute; LEFT:115px;"
-        required
-      /><br /><br />
-
-      <label for="subject" style="color:white;">Subject:</label>
-      <select
-        id="subject"
-        name="subjects"
-        style="position:absolute; LEFT:115px;"
-        required
-      >
-        <option value="grants">Grants/Permissions</option>
-        <option value="Press queries">Press Queries</option>
-        <option value="Research">Research</option>
-      </select>
-      <br /><br />
-
-      <textarea name="message" rows="10" cols="31">Text</textarea>
-      <br /><br />
-
-      <input type="submit" value="Submit" />
-    </form>
-
     <p>
-      <i
-        >For any other enquiries, please fill up the enquiry form or send an
-        email to ...</i
-      >
+      <i>For any other enquiries, please fill up the enquiry form.</i>
     </p>
-    
-    <p>
-      <a href="https://www.flickr.com/photos/kavanthekid/">Flickr</a>
-      <br/>
-      <a href="https://www.instagram.com/kavanthekid/">Instagram</a>
-      <br/>
-      <a href="https://www.facebook.com/kavanthekid">Facebook</a>
-      <br/>
-      <a href="http://www.kavanthekid.com/contact-1">Official website</a>
-      <br/>
-      <a href="http://www.kavanthekid.com/contact-1">Official website</a>
-    </p>
-    
-    <h2 id="social">Socials:</h2>
+    <div class="row">
+      <div class="twocolumn">
+        <h2 id="form">Form!</h2>
+        <p style="font-size: 12px;">
+          Please fill in the blanks.
+        </p>
 
-    <table class="center">
-      <tr>
-        <td>Instagram</td>
-        <td>
-          <a href="https://www.instagram.com/kavanthekid/">@kavanthekid</a>
-        </td>
-      </tr>
-      <tr>
-        <td>Facebook</td>
-        <td><a href="https://www.facebook.com/kavanthekid">@kavanthekid</a></td>
-      </tr>
-      <tr>
-        <td>Youtube</td>
-        <td>
-          <a href="https://www.facebook.com/kavanthekid">Kavan the Kid</a>
-        </td>
-      </tr>
-      <tr>
-        <td>Flickr</td>
-        <td>
-          <a href="https://www.flickr.com/photos/kavanthekid/">Kavan Cardoza</a>
-        </td>
-      </tr>
-      <tr>
-        <td>Official Website</td>
-        <td>
-          <a href="http://www.kavanthekid.com/contact-1">Kavan the Kid</a>
-        </td>
-      </tr>
-    </table>
+        <form action="/action_page.php" id="form1">
+          <label for="fname" style="color:white;">First name: *</label>
+          <input
+            type="fname"
+            id="fname"
+            name="fname"
+            style="position:absolute; LEFT:140px;"
+            required
+          /><br /><br />
+
+          <label for="lname" style="color:white;">Last name: *</label>
+          <input
+            type="lname"
+            id="lname"
+            name="lname"
+            style="position:absolute; LEFT:140px;"
+            required
+          /><br /><br />
+
+          <label for="email" style="color:white;">Email: *</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            style="position:absolute; LEFT:140px;"
+            required
+          /><br /><br />
+
+          <label for="subject" style="color:white;">Subject: *</label>
+          <select
+            id="subject"
+            name="subjects"
+            style="position:absolute; LEFT:140px;"
+            required
+          >
+            <option value="grants">Grants/Permissions</option>
+            <option value="Press queries">Press Queries</option>
+            <option value="Research">Research</option>
+          </select>
+          <br /><br />
+
+          <textarea name="message" rows="10" cols="34">Text</textarea>
+          <br /><br />
+        </form>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <button>Submit</button>
+        <br/> <br/> <br/>
+      </div>
+
+      <div class="twocolumn" style="padding-top:75px; padding-left:250px;">
+        <h2 id="social">Socials:</h2>
+
+        <p>
+          <a href="https://www.flickr.com/photos/kavanthekid/" class="logolink"
+            ><img
+              src="https://cdn.glitch.com/f059ccde-c18f-49ac-b555-849d51a303c4%2Fflckr-vector.png?v=1608153042115"
+              width="5%"
+          /></a>
+          <br />
+          <a href="https://www.instagram.com/kavanthekid/" class="logolink"
+            ><img
+              src="https://cdn.glitch.com/f059ccde-c18f-49ac-b555-849d51a303c4%2Fig.png?v=1607566694503"
+              width="5%"
+          /></a>
+          <br />
+          <a href="https://www.facebook.com/kavanthekid" class="logolink"
+            ><img
+              src="https://cdn.glitch.com/f059ccde-c18f-49ac-b555-849d51a303c4%2Ffb-vector.png?v=1608153038298"
+              width="5%"
+          /></a>
+          <br />
+          <a href="https://www.youtube.com/channel/UCMOiV-agwdaNxJENLQ_Sudg" class="logolink"
+            ><img
+              src="https://cdn.glitch.com/f059ccde-c18f-49ac-b555-849d51a303c4%2Fyt%20vector.png?v=1608155913911"
+              width="5%"
+          /></a>
+          <br/>
+          <a href="http://www.kavanthekid.com/" class="logolink"
+            >Official website</a
+          >
+        </p>
+      </div>
+    </div>
 
     <hr />
 
